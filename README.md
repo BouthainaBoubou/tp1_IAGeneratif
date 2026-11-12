@@ -17,7 +17,7 @@ Ce notebook contient deux parties :
 ## Fichiers
 
 ```
-Activit__pratique_Bases_de_Pytorch.ipynb   # le notebook
+Activité pratique Bases de Pytorch.ipynb   # le notebook
 graphe_operations.png                      # graphe de calcul généré par torchviz
 README.md
 ```
