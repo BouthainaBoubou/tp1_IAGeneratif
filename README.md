@@ -19,6 +19,9 @@ Ce notebook contient deux parties :
 ```
 Activité pratique Bases de Pytorch.ipynb   # le notebook
 graphe_operations.png                      # graphe de calcul généré par torchviz
+pyproject.toml                             # dépendances
+uv.lock                                    # versions exactes des dépendances
+.python-version                            # version de Python (3.12)
 README.md
 ```
 
@@ -29,6 +32,16 @@ Ne sont **pas inclus** dans le dépôt, car ils sont recréés en exécutant le 
 ---
 
 ## Installation
+
+Prérequis : Python 3.12 et [uv](https://docs.astral.sh/uv/).
+
+```bash
+git clone https://github.com/BouthainaBoubou/tp1_IAGeneratif.git
+cd tp1_IAGeneratif
+uv sync
+```
+
+Sans uv, on peut installer les mêmes bibliothèques avec pip :
 
 ```bash
 pip install torch torchvision matplotlib scikit-learn torchviz torcheval torchmetrics
@@ -42,7 +55,7 @@ Le notebook fonctionne sur CPU. Si un GPU CUDA est disponible, PyTorch l'utilise
 
 ## Exécution
 
-Ouvrir le notebook et exécuter les cellules **dans l'ordre**. Au premier lancement, MNIST est téléchargé dans `data/`.
+Ouvrir le notebook avec le kernel `.venv` du projet et exécuter les cellules **dans l'ordre**. Au premier lancement, MNIST est téléchargé dans `data/`.
 
 ---
 

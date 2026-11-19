@@ -12,3 +12,4 @@ wheels/
 data/
 *.pt
 *.pth
+.ipynb_checkpoints/
